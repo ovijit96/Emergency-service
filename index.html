@@ -3,36 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/logo-dark.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/logo-dark.png" type="">
   <title>Emergency Service</title>
-  <!-- Tailwind + DaisyUI -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <!-- Tailwind + DaisyUI -->
+  
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-green-50">
-
+<div class="container mx-auto max-w-7xl">
  <!-- navbar -->
-<div class="navbar bg-white px-6">
-  <div class="flex-1 flex items-center gap-3">
+<div class="navbar bg-white px-4 md:px-6 flex flex-col md:flex-row md:justify-between gap-2">
+  <div class="flex-1 flex items-center gap-3 justify-center md:justify-start">
     <!-- logo -->
     <img class="h-10 w-10" src="assets/logo.png" alt="">
     <!-- text -->
-    <span class="text-2xl font-bold text-green-700">
-      Emergency <br> Service
+    <span class="text-xl md:text-2xl font-bold text-green-700 text-center md:text-left">
+      Emergency <br class="hidden md:block"> Service
     </span>
   </div>
 
-  <div class="flex gap-4 items-center">
+  <div class="flex gap-3 md:gap-4 items-center justify-center md:justify-end flex-wrap">
     <!-- ❤️ Counter -->
-    <button id="love-btn" class="btn bg-green-100 rounded-3xl text-xl">💖 
+    <button id="love-btn" class="btn bg-green-100 rounded-3xl text-lg md:text-xl">💖 
       <span id="love-count">0</span>
     </button>
 
-    <!-- 🔔 Button -->
-    <button class="btn bg-green-100 rounded-3xl text-xl"> <span id="points">100</span> 🪙</button>
+    <!-- 🪙 Points -->
+    <button class="btn bg-green-100 rounded-3xl textt-lg md:text-xl"> <span id="points">100</span> 🪙</button>
 
     <!-- Copy Button -->
-    <button class="btn rounded-3xl text-xl bg-green-600 text-white"> Copy</button>
+    <button class="btn rounded-3xl text-lg md:text-xl bg-green-600 text-white"> Copy</button>
 
     
   </div>
@@ -41,19 +42,19 @@
 
 
   <!-- Header -->
-  <div class="text-center bg-gradient-to-r from-green-900 to-green-500 text-white py-6">
-    <img src="assets/logo-dark.png" class="mx-auto w-14 mb-2" />
-    <h1 class="text-2xl font-bold mb-3">জরুরি সেবা ডিরেক্টরি</h1>
-    <p class="text-sm">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+  <div class="text-center bg-gradient-to-r from-green-900 to-green-500 text-white px-3 py-6">
+    <img src="assets/logo-dark.png" class="mx-auto w-12 mb-2" />
+    <h1 class="text-xl md:text-2xl font-bold mb-3">জরুরি সেবা ডিরেক্টরি</h1>
+    <p class="text-sm md:text-base">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
   </div>
 
   
 
   <!-- Main Section -->
-  <div class="flex flex-col md:flex-row gap-6 p-6">
+  <div class="flex flex-col lg:flex-row gap-6 p-4 md:p-6">
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 flex-1">
 
       <!-- National Emergency -->
       <div class="card bg-white shadow-md rounded-2xl">
@@ -158,7 +159,7 @@
           </div>
         </div>
       </div>
-<!-- -----------Done----------- -->
+
       <!-- Ambulance -->
       <div class="card bg-white shadow-md rounded-2xl">
         <div class="card-body space-y-3">
@@ -193,7 +194,7 @@
           </div>
         </div>
       </div>
-<!-- -----------Done----------- -->
+
       <!-- Women & Child -->
       <div class="card bg-white shadow-md rounded-2xl">
         <div class="card-body space-y-3">
@@ -228,7 +229,7 @@
        </div>
         </div>
       </div>
-<!-- -----------Done----------- -->
+
       <!-- Anti Corruption -->
       <div class="card bg-white 
       shadow-md rounded-2xl">
@@ -264,7 +265,7 @@
        </div>
         </div>
       </div>
-<!-- -----------Done----------- -->
+
       <!-- Electricity -->
       <div class="card bg-white shadow-md rounded-2xl">
         <div class="card-body space-y-3">
@@ -334,7 +335,7 @@
        </div>
         </div>
       </div>
-<!-- -----------Done----------- -->
+
       <!-- Railway -->
       <div class="card bg-white shadow-md rounded-2xl">
         <div class="card-body space-y-3">
@@ -353,23 +354,39 @@
             <span class="badge badge-outline bg-slate-200 mt-1">রেলওয়ে</span>
           </div>
           <div class="flex mt-4 gap-2 rounded-3xl">
-    <!-- Copy -->
-    <button 
-      class="btn btn-sm flex-1 copy-btn" 
-      data-number="163">
-      📋 Copy
-    </button>
-    <!-- Call -->
-    <button 
-      class="btn btn-success btn-sm flex-1 call-btn" 
-      data-number="163" 
-      data-service="পরিবহন">
-      📞 Call
-    </button>
+          <!-- Copy -->
+         <button 
+       class="btn btn-sm flex-1 copy-btn" 
+       data-number="163">
+       📋 Copy
+        </button>
+       <!-- Call -->
+       <button 
+       class="btn btn-success btn-sm flex-1 call-btn" 
+       data-number="163" 
+       data-service="পরিবহন">
+       📞 Call
+        </button>
+         </div>
+         </div>
        </div>
-        </div>
-      </div>
 
+    </div> <!--cards grid er div close done-->
+
+    <!-- Call History -->
+    <div class="card bg-white shadow-md w-full lg:w-3/12">
+      <div class="card-body">
+        <h2 class="card-title flex flex-col md:flex-row justify-between items-start md:items-center gap-2">📞 Call History 
+          <button id="clear-history" class="btn bg-green-600 rounded-3xl text-base md:text-xl">Clear</button>
+        </h2>
+        <ul id="call-history" class="mt-2 space-y-2 text-sm md:text-base">
+        </ul>
+      </div>
     </div>
+    </div> <!--main section er div close done-->
+</div>
+    <!-- JS -->
+  <script src="script.js"></script>
+
     </body>
     </html>
