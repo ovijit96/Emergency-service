@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo-dark.png" type="image/x-icon">
+  <title>Emergency Service</title>
+  <!-- Tailwind + DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-green-50">
+
+ <!-- navbar -->
+<div class="navbar bg-white px-6">
+  <div class="flex-1 flex items-center gap-3">
+    <!-- logo -->
+    <img class="h-10 w-10" src="assets/logo.png" alt="">
+    <!-- text -->
+    <span class="text-2xl font-bold text-green-700">
+      Emergency <br> Service
+    </span>
+  </div>
+
+  <div class="flex gap-4 items-center">
+    <!-- ❤️ Counter -->
+    <button id="love-btn" class="btn bg-green-100 rounded-3xl text-xl">💖 
+      <span id="love-count">0</span>
+    </button>
+
+    <!-- 🔔 Button -->
+    <button class="btn bg-green-100 rounded-3xl text-xl"> <span id="points">100</span> 🪙</button>
+
+    <!-- Copy Button -->
+    <button class="btn rounded-3xl text-xl bg-green-600 text-white"> Copy</button>
+
+    
+  </div>
+</div>
+
+
+
+  <!-- Header -->
+  <div class="text-center bg-gradient-to-r from-green-900 to-green-500 text-white py-6">
+    <img src="assets/logo-dark.png" class="mx-auto w-14 mb-2" />
+    <h1 class="text-2xl font-bold mb-3">জরুরি সেবা ডিরেক্টরি</h1>
+    <p class="text-sm">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+  </div>
+
+  
+
+  <!-- Main Section -->
+  <div class="flex flex-col md:flex-row gap-6 p-6">
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
+
+      <!-- National Emergency -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-red-100 text-xl">🚨</div>
+              <div>
+                <h2 class="font-bold text-lg">জাতীয় জরুরি সেবা</h2>
+                <p class="text-gray-500 text-sm">National Emergency</p>
+              </div>
+            </div>
+            <button id="love-btn" class="btn btn-ghost btn-circle ">♥️ </button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">999</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">সার্বজনীন</span>
+          </div>
+          
+  <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="999">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="999" 
+      data-service="জাতীয় জরুরি সেবা">
+      📞 Call
+    </button>
+  </div>
+        </div>
+      </div>
+      <!-- Police -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-100 text-blue-600 text-xl">👮</div>
+              <div>
+                <h2 class="font-bold text-lg">পুলিশ</h2>
+                <p class="text-gray-500 text-sm">Police</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">999</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">পুলিশ</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="999">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="999" 
+      data-service="জাতীয় জরুরি সেবা">
+      📞 Call
+    </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fire Service -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-orange-100 text-xl">🔥</div>
+              <div>
+                <h2 class="font-bold text-lg">ফায়ার সার্ভিস</h2>
+                <p class="text-gray-500 text-sm">Fire Service</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">999</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">ফায়ার</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="999">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="999" 
+      data-service="ফায়ার সার্ভিস">
+      📞 Call
+    </button>
+          </div>
+        </div>
+      </div>
+<!-- -----------Done----------- -->
+      <!-- Ambulance -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-pink-100  text-xl">🚑</div>
+              <div>
+                <h2 class="font-bold text-lg">অ্যাম্বুলেন্স</h2>
+                <p class="text-gray-500 text-sm">Ambulance</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle ">♥️</button>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-gray-800">1994-999999</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">স্বাস্থ্য</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="1994-999999">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="1994-999999" 
+      data-service="অ্যাম্বুলেন্স">
+      📞 Call
+    </button>
+          </div>
+        </div>
+      </div>
+<!-- -----------Done----------- -->
+      <!-- Women & Child -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-purple-100  text-xl">👩‍👧</div>
+              <div>
+                <h2 class="font-bold text-lg">নারী ও শিশু সহায়তা</h2>
+                <p class="text-gray-500 text-sm">Women & Child Helpline</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">109</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">সহায়তা</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="109">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="109" 
+      data-service="নারী ও শিশু সহায়তা">
+      📞 Call
+    </button>
+       </div>
+        </div>
+      </div>
+<!-- -----------Done----------- -->
+      <!-- Anti Corruption -->
+      <div class="card bg-white 
+      shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-red-200  text-xl">⚖️</div>
+              <div>
+                <h2 class="font-bold text-lg">দুদক</h2>
+                <p class="text-gray-500 text-sm">Anti-Corruption</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">106</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">সরকারি</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="106">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="106" 
+      data-service="দুদক">
+      📞 Call
+    </button>
+       </div>
+        </div>
+      </div>
+<!-- -----------Done----------- -->
+      <!-- Electricity -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-yellow-100 text-xl">💡</div>
+              <div>
+                <h2 class="font-bold text-lg">বিদ্যুৎ বিভাগ</h2>
+                <p class="text-gray-500 text-sm">Electricity Outage</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">16216</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">বিদ্যুৎ</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="16216">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="16216" 
+      data-service="বিদ্যুৎ">
+      📞 Call
+    </button>
+       </div>
+        </div>
+      </div>
+
+      <!-- BRAC -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-green-100 text-xl">📡</div>
+              <div>
+                <h2 class="font-bold text-lg">ব্র্যাক</h2>
+                <p class="text-gray-500 text-sm">BRAC</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">16445</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">এনজিও</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="16445">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="16445" 
+      data-service="ব্র্যাক">
+      📞 Call
+    </button>
+       </div>
+        </div>
+      </div>
+<!-- -----------Done----------- -->
+      <!-- Railway -->
+      <div class="card bg-white shadow-md rounded-2xl">
+        <div class="card-body space-y-3">
+          <div class="flex justify-between items-start">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-xl">🚆</div>
+              <div>
+                <h2 class="font-bold text-lg">বাংলাদেশ রেলওয়ে</h2>
+                <p class="text-gray-500 text-sm">Bangladesh Railway</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-circle">♥️</button>
+          </div>
+          <div>
+            <p class="text-3xl font-bold text-gray-800">163</p>
+            <span class="badge badge-outline bg-slate-200 mt-1">রেলওয়ে</span>
+          </div>
+          <div class="flex mt-4 gap-2 rounded-3xl">
+    <!-- Copy -->
+    <button 
+      class="btn btn-sm flex-1 copy-btn" 
+      data-number="163">
+      📋 Copy
+    </button>
+    <!-- Call -->
+    <button 
+      class="btn btn-success btn-sm flex-1 call-btn" 
+      data-number="163" 
+      data-service="পরিবহন">
+      📞 Call
+    </button>
+       </div>
+        </div>
+      </div>
+
+    </div>
+    </body>
+    </html>
