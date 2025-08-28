@@ -45,9 +45,17 @@ for (let i = 0; i < callButtons.length; i++) {
       pointsEl.textContent = coins;
 
       alert("Calling " + service + " (" + number + ")...");
+      // time genarate
+      const now = new Date();
+      const localTime = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
       const li = document.createElement("li");
-      li.textContent = service + " - " + number;
+      li.innerHTML = `
+        <span style="margin-right:6px;">📞</span> 
+        <strong>${service}</strong> - ${number} 
+        <span style="float:right; font-size:12px; color:gray;">${localTime}</span>
+      `;
+      
       callHistoryEl.prepend(li);
     } else {
       alert("❌ আপনার কাছে পর্যাপ্ত কয়েন নেই!");
